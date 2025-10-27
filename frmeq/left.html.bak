@@ -1,0 +1,11 @@
+<html>
+<head><title>clicked page </title></head>
+<body bgcolor = "lightgreen" >
+<br><br>
+<a href="dis.html" target="rightFrame"> <center><h1 style="color:blue;">MCA</center><br><br></a>
+  
+
+
+<center><h1></h1><center>
+</body>
+</html>

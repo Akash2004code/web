@@ -1,0 +1,13 @@
+<html>
+<head><title>clicked page </title></head>
+<body bgcolor = "yellow" >
+<br><br>
+<center><h1 style="color:blue;">MES</center><br><br>
+<p>MES College of Engineering (MESCE), Kuttippuram, is the first self-financing engineering college in Kerala. 
+MES College of Engineering It was established in 1994 under the Muslim Educational Society with minority status. 
+The campus is located on the banks of the Bharathappuzha (also known as the “Nila”) river, providing a serene environmen</p>
+<center><h1></h1><center>
+
+<a href="tabel.html" target="rightFrame"> <center><h1 style="color:blue;">clickme</center><br><br></a>
+</body>
+</html>
