@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Welcome To Registration Form</title>
+<style>
+label {
+  width: 140px;
+  font-size: 20px;
+  display: inline-block;
+  text-align: right;
+}
+
+input {
+  padding: 6px;
+  width: 300px;
+  font-size: 14px;
+  border-radius: 4px;
+  border: 1px solid blue;
+}
+
+button {
+  width: 10%;
+  padding: 10px;
+  font-size: 20px;
+  background-color: #00BFFF; /* Corrected invalid color */
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #007acc;
+}
+
+body {
+  background-color: #E75480;
+  font-family: Arial, sans-serif;
+}
+
+h2 {
+  text-align: center;
+  color: white;
+}
+</style>
+
+<script>
+function validate() {
+  var name = document.getElementById("nam").value;
+  var passwd = document.getElementById("pwd").value;
+  var phone = document.getElementById("pno").value;
+  var pswdc = document.getElementById("pwdc").value; // fixed typo
+
+  if (name === "") {
+    alert('Name cannot be blank');
+    return false;
+  } else if (!isNaN(name)) {
+    alert('Name requires alphabets!');
+    return false;
+  } else if (passwd === "") {
+    alert('Enter a Password');
+    return false;
+  } else if (passwd !== pswdc) {
+    alert('Password is not the same');
+    return false;
+  } else if (passwd.length < 8) {
+    alert('Password requires at least 8 characters');
+    return false;
+  } else if (phone === "") {
+    alert('Enter your phone number!');
+    return false;
+  } else if (isNaN(phone)) {
+    alert('Invalid Phone Number');
+    return false;
+  } else if (phone.length !== 10) {
+    alert('Not a Valid Phone Number (need 10 digits)');
+    return false;
+  } else {
+    alert('Thank You for Registration');
+    return true;
+  }
+}
+</script>
+</head>
+
+<body>
+  <h2>FORM VALIDATION</h2>
+
+  <form style="width: 600px; margin: 0 auto;" onsubmit="return validate();">
+    <label>Name</label>
+    <input type="text" placeholder="Name" id="nam"><br><br>
+
+    <label>Password</label>
+    <input type="password" id="pwd"><br><br>
+
+    <label>Confirm Password</label>
+    <input type="password" id="pwdc"><br><br>
+
+    <label>Phone Number</label>
+    <input type="text" placeholder="Phone Number" id="pno"><br><br>
+
+    <div style="text-align: center;">
+      <button type="submit">Submit</button>
+    </div>
+  </form>
+</body>
+</html>
