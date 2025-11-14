@@ -1,0 +1,60 @@
+<html>
+<head><U><h2>REGISTRATION FORM</h2></u></head>
+<body bgcolor = "lightgreen">
+<br><br>
+
+
+<form>
+<label type="text">Name</label>
+<input type="text"><br>
+<br>
+<label type="password">Password</label>
+<input type="password"><br><br>
+<label type="num">Mobile</label>
+<input type="mobile" name="mobile"size="20" maxlength="10" required><br>
+<br>
+<label type="email">Email</label>
+<input type="email" name="email">
+<br><br>
+Select gender
+    &nbsp;<input type="radio" id="male" name="gender" value="male">
+    <label for="male">Male</label>
+
+      &nbsp;<input type="radio" id="female" name="gender" value="female">
+      <label for="female">Female</label>
+
+     &nbsp; <input type="radio" id="Other" name="gender"value="other">
+    <label for="other">Other</label>
+	<br><br>
+	<label >Nationality</label>
+	<select>
+	<option>INDIAN</option>
+	<option>AMERICAN</option>
+	<option>UAE</option>
+	<option></option>
+	</select>
+	<br><br>
+<label for="addBox">Address </label>
+<textarea id="addBox" name="address" required></textarea>
+<br>
+	<br>
+	<label type="DOB">DOB</label>
+	<input type="date"><br>
+	<br>
+<fieldset>	<legend>
+<label><b>Language know :<b></label></legend> <br><br>	<input type="checkbox" id="english" name="english" value="yes" checked>
+<label for="english">English</label><br><br>
+<input type="checkbox" id="mala" name="mala" value="yes" checked>
+<label for="mala">Malayalam</label><br><br>
+<input type="checkbox" id="hindi" name="hindi" value="yes" checked>
+<label for="hindi">Hindi</label>
+</fieldset>
+<br><br>
+<input type="submit" value="submit">
+<input type="button" value="cancel">
+</form>
+
+
+<center>
+</body>
+</html>

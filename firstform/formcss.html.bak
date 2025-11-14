@@ -1,0 +1,79 @@
+<html>
+<head>
+    <style>
+        body {
+            background-color:FFF2C6 ;
+        }
+
+        form {
+            background-color: AAC4F5;
+            padding: 5px;       
+            width: 350px;
+            border-radius: 10px;
+			 margin-top: 0;  
+        }
+    </style>
+
+    <u><center><h2 >REGISTRATION FORM</h2><center></u>
+</head>
+
+<body>
+<br><br>
+<center>
+<form>
+<label>Name :&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</label>
+<input type="text"><br><br>
+
+<label>Password :&nbsp&nbsp&nbsp&nbsp&nbsp</label>
+<input type="password"><br><br>
+
+<label>Mobile  :&nbsp&nbsp</label>
+<span>+91</span>
+<input type="mobile" name="mobile" size="20" maxlength="10" required><br><br>
+
+<label>Email :&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</label>
+<input type="email" name="email"><br><br>
+
+<label id="hdg">Gender :&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</label>
+	<label>Male</label>
+	<input type="radio" name="gender" value="Male" required>
+	<label>Female</label>
+	<input type="radio" name="gender" value="Female" required>
+	<label>Other</label>
+	<input type="radio" name="gender" value="Other" required ><br><br>
+<label>Nationality&nbsp&nbsp&nbsp&nbsp</label>
+<select>
+    <option>INDIAN</option>
+    <option>AMERICAN</option>
+    <option>UAE</option>
+</select>
+<br><br>
+
+<label for="addBox">Address :&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</label>
+<textarea id="addBox" name="address" required></textarea>
+<br><br>
+
+<label>DOB :&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</label>
+<input type="date"><br><br>
+
+<fieldset>
+    <legend><b>Language known :</b></legend><br>&nbsp&nbsp&nbsp&nbsp
+    <input type="checkbox" id="english" name="english" checked>
+    <label for="english">English</label><br><br>
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+    <input type="checkbox" id="mala" name="mala" checked>
+    <label for="mala">Malayalam</label><br><br>
+
+    <input type="checkbox" id="hindi" name="hindi" checked>
+    <label for="hindi">Hindi</label>
+</fieldset>
+
+<br><br>
+
+<input type="submit" value="Submit">
+<input type="button" value="Cancel">
+
+</form>
+</center>
+</body>
+</html>
